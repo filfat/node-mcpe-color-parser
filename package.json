@@ -1,0 +1,31 @@
+{
+  "name": "node-mcpe-color-parser",
+  "version": "0.1.0",
+  "description": "Parse MCPE colour coded string to terminal colour coded. Doesnt support bold, italic etc",
+  "main": "app.js",
+  "scripts": {
+    "test": "ava test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://filfat@github.com/filfat/node-mcpe-color-parser.git"
+  },
+  "keywords": [
+    "mcpe",
+    "minecraft",
+    "pocket",
+    "edition",
+    "color",
+    "parse",
+    "parser"
+  ],
+  "author": "Filiph Sandström <filiph.sandstrom@filfatstudios.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filfat/node-mcpe-color-parser/issues"
+  },
+  "homepage": "https://github.com/filfat/node-mcpe-color-parser#readme",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
+}
