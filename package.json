@@ -1,6 +1,6 @@
 {
   "name": "node-mcpe-color-parser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parse MCPE colour coded string to terminal colour coded. Doesnt support bold, italic etc",
   "main": "app.js",
   "scripts": {
