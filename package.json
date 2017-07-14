@@ -1,6 +1,6 @@
 {
   "name": "node-mcpe-color-parser",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Parse MCPE colour coded string to terminal colour coded. Doesnt support bold, italic etc",
   "main": "app.js",
   "scripts": {
@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/filfat/node-mcpe-color-parser#readme",
   "dependencies": {
-    "chalk": "^1.1.3"
+    "chalk": "^2.0.1"
   }
 }

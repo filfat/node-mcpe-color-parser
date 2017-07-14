@@ -10,39 +10,66 @@ module.exports = function(str) {
         let str = strs[n].substring(1);
         switch (strs[n][0]) {
             case '0':
-                strs[n] = chalk.black(str);
+                strs[n] = chalk.hex('#000000')(str);
+                break;
+            case '1':
+                strs[n] = chalk.hex('#0000AA')(str);
+                break;
+            case '2':
+                strs[n] = chalk.hex('#00AA00')(str);
+                break;
+            case '3':
+                strs[n] = chalk.hex('#00AAAA')(str);
+                break;
+            case '4':
+                strs[n] = chalk.hex('#AA0000')(str);
+                break;
+            case '5':
+                strs[n] = chalk.hex('#AA00AA')(str);
+                break;
+            case '6':
+                strs[n] = chalk.hex('#FFAA00')(str);
+                break;
+            case '7':
+                strs[n] = chalk.hex('#AAAAAA')(str);
+                break;
+            case '8':
+                strs[n] = chalk.hex('#555555')(str);
                 break;
             case '9':
-            case '1':
-                strs[n] = chalk.blue(str);
+                strs[n] = chalk.hex('#5555FF')(str);
                 break;
             case 'a':
-            case '2':
-                strs[n] = chalk.green(str);
+                strs[n] = chalk.hex('#55FF55')(str);
                 break;
             case 'b':
-            case '3':
-                strs[n] = chalk.cyan(str);
+                strs[n] = chalk.hex('#55FFFF')(str);
                 break;
             case 'c':
-            case '4':
-                strs[n] = chalk.red(str);
+                strs[n] = chalk.hex('#FF5555')(str);
                 break;
             case 'd':
-            case '5':
-                strs[n] = chalk.magenta(str);
-                break;
-            //6 = Brown
-            case '7':
-            case '8':
-                strs[n] = chalk.gray(str);
+                strs[n] = chalk.hex('#FF55FF')(str);
                 break;
             case 'e':
-                strs[n] = chalk.yellow(str);
+                strs[n] = chalk.hex('#FFFF55')(str);
                 break;
-            default:
-            case 'r':
             case 'f':
+                strs[n] = chalk.hex('#FFFFFF')(str);
+                break;
+            
+            case 'l':
+                strs[n] = chalk.bold(str);
+                break;
+            case 'n':
+                strs[n] = chalk.underline(str);
+                break;
+            case 'o':
+                strs[n] = chalk.italic(str);
+                break;
+
+            case 'r':
+            default:
                 strs[n] = str;
                 break;
         }
